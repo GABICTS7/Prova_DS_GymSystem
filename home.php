@@ -13,7 +13,7 @@ require 'conexao.php';
 <style>
 /* Estilo para o menu lateral */
 body {
-    background-image: url('imgs/Black Abstract Stone Texture Zoom Virtual Background.png');
+    background-color: rgb(58, 58, 58);
 }
 
 .sidenav {
@@ -128,7 +128,7 @@ body {
     <p class="text-center" id="motivational-quote">"Sua jornada para a saúde começa aqui!"</p>
 
     <div class="text-center">
-        <img src="imgs/Logo_Personal_Trainer_Preto_Simples__2_-removebg-preview.png" alt="Foto da Academia" class="logo-img">
+        <img src="imgs/Logo.png" alt="Foto da Academia" class="logo-img">
     </div>
 </div>
 

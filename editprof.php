@@ -63,16 +63,12 @@ if (isset($_GET['id'])) {
             <input type="text" name="nome" value="<?= $professor['nome']; ?>" required>
         </div>
         <div class="form-group">
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" name="especialidade" value="<?= $professor['especialidade']; ?>" required>
+        </div>
+        <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" name="email" value="<?= $professor['email']; ?>" required>
-        </div>
-        <div class="form-group">
-            <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" value="<?= $professor['cpf']; ?>" required>
-        </div>
-        <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="text" name="telefone" value="<?= $professor['telefone']; ?>" required>
         </div>
         <button type="submit" class="btn btn-primary">Atualizar</button>
     </form>
