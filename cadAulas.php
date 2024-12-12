@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; // Arquivo de configuração para conexão com o banco de dados
+require 'conexao.php'; // Arquivo de configuração para conexão com o banco de dados
 
 // Consulta para obter todas as aulas
 $sql_aulas = "SELECT * FROM aulas";
@@ -14,13 +14,15 @@ $aulas = $stmt_aulas->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <title>Cadastro de Aulas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='styleheest' href='style.css'>
 </head>
+
 <body>
 <div class="container mt-5">
     <h2>Cadastro de Aulas</h2>
     
     <!-- Formulário de Cadastro de Aulas -->
-    <form action="cadastrar_aula.php" method="POST">
+    <form action="cadAula.php" method="POST">
         <div class="mb-3">
             <label for="nome" class="form-label">Nome da Aula</label>
             <input type="text" class="form-control" id="nome" name="nome" required>
@@ -79,8 +81,8 @@ $aulas = $stmt_aulas->fetchAll(PDO::FETCH_ASSOC);
                             ?>
                         </td>
                         <td>
-                            <a href="editar_aula.php?id=<?php echo $aula['id']; ?>" class="btn btn-warning btn-sm">Editar</a>
-                            <a href="excluir_aula.php?id=<?php echo $aula['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Você tem certeza que deseja excluir esta aula?');">Excluir</a>
+                            <a href="editAula.php?id=<?php echo $aula['id']; ?>" class="btn btn-warning btn-sm">Editar</a>
+                            <a href="deleteAula.php?id=<?php echo $aula['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Você tem certeza que deseja excluir esta aula?');">Excluir</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; // Arquivo de configuração para conexão com o banco de dados
+require 'conexao.php'; // Arquivo de configuração para conexão com o banco de dados
 
 // Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -36,8 +36,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>Cadastrar Professor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="styleheet" href="style.css">
+    
     <script>
         // Validação no lado do cliente
+    
         function validarFormulario() {
             const nome = document.getElementById('nome').value;
             const especialidade = document.getElementById('especialidade').value;

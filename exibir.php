@@ -1,12 +1,12 @@
 <?php
-require 'config.php'; // Arquivo de configuração para conexão com o banco de dados
+require 'conexao.php'; // Arquivo de conexão com o banco de dados
 
 // Verifica se o ID da aula foi passado na URL
 if (isset($_GET['id'])) {
 $aula_id = intval($_GET['id']);
 
 
-// Consulta para obter os detalhes da aula
+// Consulta os detalhes da aula
 $sql_aula = "SELECT * FROM aulas WHERE id = :id";
 $stmt_aula = $pdo->prepare($sql_aula);
 $stmt_aula->bindParam(':id', $aula_id);
@@ -49,7 +49,9 @@ exit;
 <meta charset="UTF-8">
 <title>Informações da Aula</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="styleheest" href="style.css">
 </head>
+
 <body>
 <div class="container mt-5">
 <h2>Detalhes da Aula: <?php echo htmlspecialchars($aula['nome_aula']); ?></h2>

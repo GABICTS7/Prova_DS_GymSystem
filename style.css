@@ -1,0 +1,217 @@
+/* Estilo geral para o sistema de academia */
+
+body {
+    background: url('imgs/Black\ Abstract\ Stone\ Texture\ Zoom\ Virtual\ Background.png');;
+    background-size:cover;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    color: #ffffff; /* Cor do texto geral */
+}
+
+/* Camada escura sobre o fundo */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96%;
+    background-color: rgba(232, 226, 226, 0.807); /* Opacidade ajustada para fundo mais escuro */
+    z-index: -1;
+}
+
+/* Centralização de todos os formulários e tabelas */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.card {
+    margin-top: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #737373; /* Cor de fundo para o card */
+    border-radius: 1px;
+    padding: 2px;
+}
+
+/* Centralização e estilização de títulos */
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo dos formulários de cadastro */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form select, form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px; /* Limita a largura dos campos */
+    border-radius: 5px;
+    border: 1px solid #040404;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 17px; /* Define o tamanho da fonte */
+    color: #424242; /* Cor do texto */
+    font-weight: bold; /* Define o peso da fonte */
+    font-family: 'Arial', sans-serif; /* Define a fonte */
+    margin-bottom: px; /* Espaço entre o label e o campo de entrada */
+    display: block; /* Garante que o label fique em uma linha separada */
+}
+
+form input:focus, form select:focus, form button:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+/* Estilo das tabelas de listagem */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #495057; /* Fundo escuro para a tabela */
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+table th {
+    background-color: #343a40;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #6c757d;
+}
+
+table tr:hover {
+    background-color: #5a6268;
+}
+
+/* Botões */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Formatação do menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ced4da;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Estilo do logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+/* Resposta de mensagens de erro ou sucesso */
+.alert {
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.alert-success {
+    background-color: #28a745;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+}
+
+.alert-info {
+    background-color: #17a2b8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    form input, form select, form button {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+

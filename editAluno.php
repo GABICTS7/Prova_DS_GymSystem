@@ -35,7 +35,7 @@ if (isset($_GET['id'])) {
 
         if ($update_stmt->execute()) {
             // Redirecionar após o sucesso
-            header("Location: index.php?sucesso=Aluno atualizado com sucesso!");
+            header("Location: home.php?sucesso=Aluno atualizado com sucesso!");
         } else {
             echo "Erro ao atualizar os dados do aluno.";
         }
