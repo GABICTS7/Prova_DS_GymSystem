@@ -1,5 +1,6 @@
-<?php
 
+
+      <?php
 session_start();
 
 // Verificar se o administrador está logado
@@ -35,7 +36,7 @@ if (isset($_GET['id'])) {
 
         if ($update_stmt->execute()) {
             // Redirecionar após o sucesso
-            header("Location: home.php?sucesso=Aluno atualizado com sucesso!");
+            header("Location: index.php?sucesso=Aluno atualizado com sucesso!");
         } else {
             echo "Erro ao atualizar os dados do aluno.";
         }
@@ -81,4 +82,3 @@ if (isset($_GET['id'])) {
 
 </body>
 </html>
-

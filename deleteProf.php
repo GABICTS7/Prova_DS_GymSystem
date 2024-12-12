@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
 
     if ($stmt->execute()) {
         // Redirecionar após o sucesso
-        header("Location: home.php?sucesso=Professor excluído com sucesso!");
+        header("Location: .php?sucesso=Professor excluído com sucesso!");
     } else {
         echo "Erro ao excluir o professor.";
     }

@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php';
+require 'conexao.php'; // Arquivo de configuração para conexão com o banco de dados
 ?>
 
 <!DOCTYPE html>
@@ -26,12 +26,15 @@ body {
     padding-top: 20px;
     background-size: cover;
     color: black;
+    transition: all 0.3s;
 }
+
 .sidenav h2 {
     color: black;
     text-align: center;
     margin-bottom: 30px;
 }
+
 .sidenav a {
     padding: 10px 15px;
     text-decoration: none;
@@ -40,9 +43,11 @@ body {
     display: block;
     transition: background-color 0.3s;
 }
+
 .sidenav a:hover {
     background-color: #f1f1f1;
 }
+
 .main-content {
     margin-left: 270px; /* Espaço para o menu lateral */
     padding: 20px;
@@ -68,7 +73,9 @@ body {
     display: block;
     border: none;
     text-align: left;
+    transition: background-color 0.3s;
 }
+
 .dropdown-btn:hover {
     background-color: #f1f1f1;
 }
@@ -139,6 +146,7 @@ body {
 
 <!-- Script para o Dropdown -->
 <script>
+    // Quando o botão do dropdown for clicado, exibe ou oculta o conteúdo
     var dropdown = document.querySelector('.dropdown-btn');
     var dropdownContent = document.querySelector('.dropdown-container');
 
