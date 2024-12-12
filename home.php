@@ -100,7 +100,7 @@ body {
 <!-- Menu Lateral -->
 <div class="sidenav">
     <h2>Menu</h2>
-    <a href="exibir.php">Lista de Alunos, Professores</a>
+    <a href="exibir.php">Tabela: Alunos, Professores</a>
     <a href="cadAluno.php">Cadastro aluno</a>
     <a href="cadProf.php">Cadastro professor</a>
 
